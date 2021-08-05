@@ -1,0 +1,11 @@
+.commonFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    height: 10vh;
+    background-color: #212529;
+    color: white;
+}
