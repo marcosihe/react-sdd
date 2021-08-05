@@ -1,8 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Inicio from "./pages/Inicio";
-import Deudores from "./pages/Deudores";
-import Contacto from "./pages/Contacto";
+import Home from "./pages/Home";
+import Debtors from "./pages/Debtors";
+import Contact from "./pages/Contact";
 import Error404 from "./pages/Error404";
 
 const Main = () => {
@@ -10,13 +10,13 @@ const Main = () => {
     <main>
       <Switch>
         <Route exact path="/">
-          <Inicio />
+          <Home />
         </Route>
         <Route exact path="/deudores">
-          <Deudores />
+          <Debtors />
         </Route>
         <Route exact path="/contacto">
-          <Contacto />
+          <Contact />
         </Route>
         <Route exact path="/*">
           <Error404 />

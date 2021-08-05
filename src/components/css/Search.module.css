@@ -1,0 +1,13 @@
+.debtorsSearchingForm {
+    margin: 1rem;
+}
+
+.searchingInput {
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .debtorsSearchingForm {
+        margin: 0.5rem;
+    }
+}

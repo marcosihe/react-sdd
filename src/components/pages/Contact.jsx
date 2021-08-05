@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Deudores = () => {
+const Contact = () => {
     return (
         <section>
             
@@ -8,4 +8,4 @@ const Deudores = () => {
     )
 }
 
-export default Deudores
+export default Contact
