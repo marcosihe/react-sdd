@@ -1,10 +1,21 @@
-import './App.css';
+import { Fragment } from "react";
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/commons/Footer";
+import Main from "./components/Main";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Set up del proyecto</h1>
-    </div>
+    <Fragment>
+      <Router>
+        <Header />
+        <Main/>
+        <Footer />
+      </Router>
+    </Fragment>
   );
 }
 
