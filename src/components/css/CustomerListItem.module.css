@@ -1,0 +1,27 @@
+.customerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.customerDataContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customerName {
+    font-size: 1.1rem;
+}
+
+.customerNickName {
+    color: grey;
+}
+
+.customerDebt {
+    color: #ff4136;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.viewDetailsIcon {
+    font-size: 1.2rem;
+}
