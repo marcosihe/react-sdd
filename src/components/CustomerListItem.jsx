@@ -4,6 +4,7 @@ import styles from "./css/CustomerListItem.module.css";
 
 import ViewDetailsButton from "./ViewDetailsButton";
 import EditDebtButton from "./EditDebtButton";
+import { Link } from "react-router-dom";
 
 const CustomerListItem = (props) => {
   const { customerName, customerLastName, customerNickName, customerDebt, id } =
@@ -14,8 +15,8 @@ const CustomerListItem = (props) => {
         <p className={styles.customerName}>
           {customerLastName}, {customerName}
         </p>
-        <div className="d-flex">
-          <p className={styles.customerDebt}>${customerDebt}</p>
+        <div className={styles.debtContainer}>
+          <Link to={`/deudores/detalles/editar/${id}`} className={styles.customerDebtLink}>${customerDebt}</Link>
           <EditDebtButton id={id} />
         </div>
       </div>

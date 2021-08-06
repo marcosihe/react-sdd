@@ -10,6 +10,10 @@
     margin-bottom: 0.25rem;
 }
 
+.debtContainer {
+    display: flex;
+}
+
 .customerName {
     font-size: 1.1rem;
 }
@@ -23,9 +27,14 @@
     color: grey;
 }
 
-.customerDebt {
+.customerDebtLink {
+    text-decoration: none;
     color: #ff4136;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: bold;
     margin-right: 0.5rem;
+}
+
+.customerDebtLink:hover{
+    color: #a71911;
 }
