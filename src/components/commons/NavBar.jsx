@@ -7,7 +7,7 @@ import styles from "../css/NavBar.module.css";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg" className={styles.navBar}>
       <Container>
         <Navbar.Brand href="#">
           Mi Negocio
