@@ -1,16 +1,27 @@
 import React from "react";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEdit, faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ListGroup, Button } from "react-bootstrap";
 import styles from "./css/CustomerListItem.module.css";
+import { Link } from "react-router-dom";
 
 const CustomerListItem = (props) => {
-  const { customerName, customerLastName, customerNickName, customerDebt } = props;
+  const { customerName, customerLastName, customerNickName, customerDebt, id } =
+    props;
   return (
     <ListGroup.Item className={styles.customerContainer}>
       <div className={styles.customerDataContainer}>
-        <div className={styles.customerName}>{customerLastName}, {customerName}</div>
-        <div className={styles.customerDebt}>${customerDebt}</div>
+        <div className={styles.customerName}>
+          {customerLastName}, {customerName}
+        </div>
+        <div className="d-flex">
+          <div className={styles.customerDebt}>${customerDebt}</div>
+            <Button type="button" variant="outline-warning">
+            <Link to={`/deudores/detalles/editar/${id}`} className={styles.editItemLink}>
+              <FontAwesomeIcon icon={faEdit} className={styles.editIcon}/>
+            </Link>
+            </Button>
+        </div>
       </div>
       <div className={styles.customerDataContainer}>
         <div className={styles.customerNickName}>

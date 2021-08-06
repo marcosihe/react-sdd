@@ -6,10 +6,28 @@
 .customerDataContainer {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 0.25rem;
 }
 
 .customerName {
     font-size: 1.1rem;
+}
+
+.editItemLink {
+    text-decoration: none !important;
+}
+
+.editText {
+    font-size: 1.1rem;
+    color: #212529;
+}
+
+.editIcon {
+    font-size: 1.1rem;
+    /* color: #ffc107; */
+    color: #212529;
+    margin-left: 0.25rem;
 }
 
 .customerNickName {
@@ -18,8 +36,9 @@
 
 .customerDebt {
     color: #ff4136;
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     font-weight: bold;
+    margin-right: 0.5rem;
 }
 
 .viewDetailsIcon {
