@@ -1,0 +1,10 @@
+.editItemLink {
+    text-decoration: none !important;
+}
+
+.editIcon {
+    font-size: 1.1rem;
+    /* color: #ffc107; */
+    color: #212529;
+    margin-left: 0.25rem;
+}

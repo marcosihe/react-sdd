@@ -1,9 +1,9 @@
 import React from "react";
-import { faEdit, faEye } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ListGroup, Button } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 import styles from "./css/CustomerListItem.module.css";
-import { Link } from "react-router-dom";
+
+import ViewDetailsButton from "./ViewDetailsButton";
+import EditDebtButton from "./EditDebtButton";
 
 const CustomerListItem = (props) => {
   const { customerName, customerLastName, customerNickName, customerDebt, id } =
@@ -11,30 +11,17 @@ const CustomerListItem = (props) => {
   return (
     <ListGroup.Item className={styles.customerContainer}>
       <div className={styles.customerDataContainer}>
-        <div className={styles.customerName}>
+        <p className={styles.customerName}>
           {customerLastName}, {customerName}
-        </div>
+        </p>
         <div className="d-flex">
-          <div className={styles.customerDebt}>${customerDebt}</div>
-            <Button type="button" variant="outline-warning">
-            <Link to={`/deudores/detalles/editar/${id}`} className={styles.editItemLink}>
-              <FontAwesomeIcon icon={faEdit} className={styles.editIcon}/>
-            </Link>
-            </Button>
+          <p className={styles.customerDebt}>${customerDebt}</p>
+          <EditDebtButton id={id} />
         </div>
       </div>
       <div className={styles.customerDataContainer}>
-        <div className={styles.customerNickName}>
-          <p>({customerNickName})</p>
-        </div>
-        <Button type="button" variant="outline-secondary">
-          <span>Ver detalle </span>
-          <FontAwesomeIcon
-            alt="Ícono de 'ver detalles'"
-            icon={faEye}
-            className={styles.viewDetailsIcon}
-          />
-        </Button>
+        <p className={styles.customerNickName}>({customerNickName})</p>
+        <ViewDetailsButton />
       </div>
     </ListGroup.Item>
   );
