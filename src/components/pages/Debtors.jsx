@@ -4,6 +4,7 @@ import CustomersList from "../CustomersList";
 import Search from '../Search';
 import Order from '../Order';
 import styles from '../css/Debtors.module.css';
+import AddCustomerButton from "../AddCustomerButton";
 
 const Debtors = () => {
   const exampleArray = [
@@ -78,6 +79,7 @@ const Debtors = () => {
       <section className={styles.searchingSection}>
         <Search/>
         <Order/>
+        <AddCustomerButton/>
       </section>
       <CustomersList customersList={exampleArray}/>
     </Container>
