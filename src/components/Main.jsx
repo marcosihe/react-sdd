@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Debtors from "./pages/Debtors";
 import Contact from "./pages/Contact";
 import Error404 from "./pages/Error404";
+import AddCustomer from "./AddCustomer";
 
 const Main = () => {
   return (
@@ -17,6 +18,9 @@ const Main = () => {
         </Route>
         <Route exact path="/contacto">
           <Contact />
+        </Route>
+        <Route exact path="/deudores/nuevocliente">
+          <AddCustomer />
         </Route>
         <Route exact path="/*">
           <Error404 />
