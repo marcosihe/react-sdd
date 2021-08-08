@@ -15,6 +15,20 @@ const Debtors = () => {
       phoneNumber: "381645454",
       currentDebt: 2450,
       address: "Bº Colombres",
+      history: {
+        operation_1: {
+          debt: 120,
+          concept: "Frutas: bananas y naranjas"
+        },
+        operation_2: {
+          debt: 620,
+          concept: "Frutas, leche y 1 bandeja de huevos"
+        },
+        operation_3: {
+          debt: 370,
+          concept: "Frutas, Gaseosa Coca Cola y chocolates"
+        }
+      }
     },
     {
       id: "xc45876as",
@@ -24,6 +38,20 @@ const Debtors = () => {
       phoneNumber: "3815474747",
       currentDebt: 1254,
       address: "Bº PiedraBuena",
+      history: {
+        operation_1: {
+          debt: 220,
+          concept: "Coca Cola"
+        },
+        operation_2: {
+          debt: 120,
+          concept: "Leche"
+        },
+        operation_3: {
+          debt: 700,
+          concept: "Fernet"
+        }
+      }
     },
     {
       id: "xc45878as",
@@ -33,6 +61,16 @@ const Debtors = () => {
       phoneNumber: "3812747484",
       currentDebt: 2315,
       address: "Honduras 1254",
+      history: {
+        operation_1: {
+          debt: 300,
+          concept: "Frutas y verduras"
+        },
+        operation_2: {
+          debt: 600,
+          concept: "Salame, queso, aceitunas y pre-pizzas"
+        }
+      }
     }
   ] 
   return (
