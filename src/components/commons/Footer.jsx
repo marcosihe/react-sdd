@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import styles from '../css/Footer.module.css'
+import styles from '../../css/Footer.module.css'
 
 const Footer = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, FormControl, Button } from "react-bootstrap";
-import styles from "./css/Search.module.css";
+import styles from "../css/Search.module.css";
 
 const Search = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown, DropdownButton } from "react-bootstrap";
-import styles from "./css/Order.module.css";
+import styles from "../css/Order.module.css";
 
 const Order = () => {
   return (

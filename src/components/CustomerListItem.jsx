@@ -1,6 +1,6 @@
 import React from "react";
 import { ListGroup } from "react-bootstrap";
-import styles from "./css/CustomerListItem.module.css";
+import styles from "../css/CustomerListItem.module.css";
 
 import ViewDetailsButton from "./ViewDetailsButton";
 import EditDebtButton from "./EditDebtButton";

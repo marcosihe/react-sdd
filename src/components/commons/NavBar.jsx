@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { faHandHoldingUsd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../css/NavBar.module.css";
+import styles from "../../css/NavBar.module.css";
 
 const NavBar = () => {
   return (

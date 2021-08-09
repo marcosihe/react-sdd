@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import CustomerForm from './CustomerForm'
-import styles from './css/AddCustomer.module.css'
+import styles from '../css/AddCustomer.module.css'
 
 const AddCustomer = () => {
 

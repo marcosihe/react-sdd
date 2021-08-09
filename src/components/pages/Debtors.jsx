@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import CustomersList from "../CustomersList";
 import Search from '../Search';
 import Order from '../Order';
-import styles from '../css/Debtors.module.css';
+import styles from '../../css/Debtors.module.css';
 import AddCustomerButton from "../AddCustomerButton";
 
 const Debtors = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
-import styles from "./css/CustomersList.module.css";
+import styles from "../css/CustomersList.module.css";
 import CustomerListItem from "./CustomerListItem";
 
 const CustomersList = (props) => {

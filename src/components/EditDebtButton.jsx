@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
-import styles from "./css/EditDebtButton.module.css";
+import styles from "../css/EditDebtButton.module.css";
 
 const EditDebtButton = ({ id }) => {
   return (

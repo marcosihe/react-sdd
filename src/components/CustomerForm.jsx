@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Button, Alert } from "react-bootstrap";
-import styles from "./css/CustomerForm.module.css";
+import styles from "../css/CustomerForm.module.css";
 import {
   validateNumber_1,
   validateNumber_2,
   validateNames,
-} from "./helpers/validations.js";
-import { successAlert, errorAlert } from "./helpers/alerts";
+} from "../helpers/validations.js";
+import { successAlert, errorAlert } from "../helpers/alerts";
 
 const AddCustomer = () => {
   const URL = process.env.REACT_APP_API_URL;
