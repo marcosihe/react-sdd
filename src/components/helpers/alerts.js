@@ -11,9 +11,9 @@ const successAlert = () => {
 const errorAlert = () => {
     Swal.fire({
         icon: "error",
-        title: ":(",
-        text: "Los datos no se cargaron!",
-        footer: "Intente nuevamente.",
+        title: "Ocurrió un error",
+        text: "¡Los datos no se cargaron!",
+        footer: "Puede intentar nuevamente más tarde",
       });
 }
 
