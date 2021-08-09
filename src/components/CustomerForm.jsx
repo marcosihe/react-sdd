@@ -6,8 +6,11 @@ import {
   validateNumber_2,
   validateNames,
 } from "./helpers/validations.js";
+import Swal from "sweetalert2";
 
 const AddCustomer = () => {
+  const URL = process.env.REACT_APP_API_URL;
+
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [nickName, setNickName] = useState("");
@@ -16,9 +19,7 @@ const AddCustomer = () => {
   const [address, setAddress] = useState("");
   const [error, setError] = useState(false);
 
-  //setPhoneNumber(parseInt(numberPart1.toString()+numberPart2));
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Validaciones
     if (
@@ -28,6 +29,45 @@ const AddCustomer = () => {
     ) {
       // Enviar datos a la API
       setError(false);
+      // Crear objeto
+      const customer = {
+        name: name,
+        lastName: lastName,
+        nickName: nickName,
+        phoneNumber: numberPart1 + numberPart2,
+        currentDebt: 0,
+        address: address,
+        history: {},
+      };
+      // enviar el request POST
+      try {
+        const header = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(customer),
+        };
+
+        const response = await fetch(URL, header);
+
+        if ((await response.status) === 201) {
+          Swal.fire(
+            "Cliente cargado",
+            "Los datos se guardaron exitosamente!",
+            "success"
+          );
+          e.target.reset();
+        }
+      } catch (error) {
+        console.log(error);
+        Swal.fire({
+          icon: "error",
+          title: ":(",
+          text: "Los datos no se cargaron!",
+          footer: "Intente nuevamente.",
+        });
+      }
     } else {
       // Datos erroneos: mostrar mensaje de error
       setError(true);

@@ -1,69 +1,109 @@
 {
-    "debtors":[
-        {
-            "id": "xc45877as",
-            "name": "Marcelo",
-            "lastName": "Bianchi",
-            "nickName": "El pelao",
-            "phoneNumber": "381645454",
-            "currentDebt": 2450,
-            "address": "Bº Colombres",
-            "history": {
-              "operation_1": {
-                "debt": 120,
-                "concept": "Frutas: bananas y naranjas"
-              },
-              "operation_2": {
-                "debt": 620,
-                "concept": "Frutas, leche y 1 bandeja de huevos"
-              },
-              "operation_3": {
-                "debt": 370,
-                "concept": "Frutas, Gaseosa Coca Cola y chocolates"
-              }
-            }
-          },
-          {
-            "id": "xc45876as",
-            "name": "Luciano",
-            "lastName": "Darín",
-            "nickName": "El chino",
-            "phoneNumber": "3815474747",
-            "currentDebt": 1254,
-            "address": "Bº PiedraBuena",
-            "history": {
-              "operation_1": {
-                "debt": 220,
-                "concept": "Coca Cola"
-              },
-              "operation_2": {
-                "debt": 120,
-                "concept": "Leche"
-              },
-              "operation_3": {
-                "debt": 700,
-                "concept": "Fernet"
-              }
-            }
-          },
-          {
-            "id": "xc45878as",
-            "name": "María",
-            "lastName": "Stoessel",
-            "nickName": "La chavela",
-            "phoneNumber": "3812747484",
-            "currentDebt": 2315,
-            "address": "Honduras 1254",
-            "history": {
-              "operation_1": {
-                "debt": 300,
-                "concept": "Frutas y verduras"
-              },
-              "operation_2": {
-                "debt": 600,
-                "concept": "Salame, queso, aceitunas y pre-pizzas"
-              }
-            }
-          }
-    ]
+  "debtors": [
+    {
+      "name": "Marcelo",
+      "lastName": "Bianchi",
+      "nickName": "El pelao",
+      "phoneNumber": "381645454",
+      "currentDebt": 2450,
+      "address": "Bº Colombres",
+      "history": {
+        "operation_1": {
+          "debt": 120,
+          "concept": "Frutas: bananas y naranjas"
+        },
+        "operation_2": {
+          "debt": 620,
+          "concept": "Frutas, leche y 1 bandeja de huevos"
+        },
+        "operation_3": {
+          "debt": 370,
+          "concept": "Frutas, Gaseosa Coca Cola y chocolates"
+        }
+      },
+      "id": 1
+    },
+    {
+      "name": "Luciano",
+      "lastName": "Darín",
+      "nickName": "El chino",
+      "phoneNumber": "3815474747",
+      "currentDebt": 1254,
+      "address": "Bº PiedraBuena",
+      "history": {
+        "operation_1": {
+          "debt": 220,
+          "concept": "Coca Cola"
+        },
+        "operation_2": {
+          "debt": 120,
+          "concept": "Leche"
+        },
+        "operation_3": {
+          "debt": 700,
+          "concept": "Fernet"
+        }
+      },
+      "id": 2
+    },
+    {
+      "name": "María",
+      "lastName": "Stoessel",
+      "nickName": "La chavela",
+      "phoneNumber": "3812747484",
+      "currentDebt": 2315,
+      "address": "Honduras 1254",
+      "history": {
+        "operation_1": {
+          "debt": 300,
+          "concept": "Frutas y verduras"
+        },
+        "operation_2": {
+          "debt": 600,
+          "concept": "Salame, queso, aceitunas y pre-pizzas"
+        }
+      },
+      "id": 3
+    },
+    {
+      "name": "Marcos Ezequiel",
+      "lastName": "Herrera",
+      "nickName": "maicos",
+      "phoneNumber": "3816703322",
+      "currentDebt": 0,
+      "address": "General Paz 544",
+      "history": {},
+      "id": 4
+    },
+    {
+      "name": "Lucia",
+      "lastName": "Salgado",
+      "nickName": "Chicha",
+      "phoneNumber": "3815126595",
+      "currentDebt": 0,
+      "address": "Mario Bravo 1612",
+      "history": {},
+      "id": 5
+    },
+    {
+      "name": "Pedro",
+      "lastName": "Iramain",
+      "nickName": "Pepe",
+      "phoneNumber": "3813524516",
+      "currentDebt": 0,
+      "address": "Honduras 1205",
+      "history": {},
+      "id": 6
+    },
+    {
+      "name": "Jose",
+      "lastName": "Lopez",
+      "nickName": "Caña",
+      "phoneNumber": "3815529297",
+      "currentDebt": 0,
+      "address": "Mario Bravo 644, San Miguel de Tucumán, Tucumán, Argentina.",
+      "history": {},
+      "id": 7
+    }
+  ]
 }
