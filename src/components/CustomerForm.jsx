@@ -6,7 +6,7 @@ import {
   validateNumber_2,
   validateNames,
 } from "./helpers/validations.js";
-import Swal from "sweetalert2";
+import { successAlert, errorAlert } from "./helpers/alerts";
 
 const AddCustomer = () => {
   const URL = process.env.REACT_APP_API_URL;
@@ -52,21 +52,12 @@ const AddCustomer = () => {
         const response = await fetch(URL, header);
 
         if ((await response.status) === 201) {
-          Swal.fire(
-            "Cliente cargado",
-            "Los datos se guardaron exitosamente!",
-            "success"
-          );
+          successAlert();
           e.target.reset();
         }
       } catch (error) {
         console.log(error);
-        Swal.fire({
-          icon: "error",
-          title: ":(",
-          text: "Los datos no se cargaron!",
-          footer: "Intente nuevamente.",
-        });
+        errorAlert();
       }
     } else {
       // Datos erroneos: mostrar mensaje de error

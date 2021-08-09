@@ -104,6 +104,16 @@
       "address": "Mario Bravo 644, San Miguel de Tucumán, Tucumán, Argentina.",
       "history": {},
       "id": 7
+    },
+    {
+      "name": "Estela",
+      "lastName": "Carmen",
+      "nickName": "Porota",
+      "phoneNumber": "3813211258",
+      "currentDebt": 0,
+      "address": "Pje sin nombre 1234",
+      "history": {},
+      "id": 8
     }
   ]
 }
