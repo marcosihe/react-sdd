@@ -114,6 +114,46 @@
       "address": "Pje sin nombre 1234",
       "history": {},
       "id": 8
+    },
+    {
+      "name": "Florencia",
+      "lastName": "Padilla",
+      "nickName": "Flopi",
+      "phoneNumber": "3816554488",
+      "currentDebt": 0,
+      "address": "Maipu 405",
+      "history": {},
+      "id": 9
+    },
+    {
+      "name": "Sofia",
+      "lastName": "Ferrazzano",
+      "nickName": "Sofi",
+      "phoneNumber": "3816224488",
+      "currentDebt": 0,
+      "address": "Belgrano 1451",
+      "history": {},
+      "id": 10
+    },
+    {
+      "name": "Lucas",
+      "lastName": "Carrizo",
+      "nickName": "",
+      "phoneNumber": "3816784896",
+      "currentDebt": 0,
+      "address": "Cuba 230",
+      "history": {},
+      "id": 11
+    },
+    {
+      "name": "Carla",
+      "lastName": "Romano",
+      "nickName": "",
+      "phoneNumber": "3816122598",
+      "currentDebt": 0,
+      "address": "",
+      "history": {},
+      "id": 12
     }
   ]
 }

@@ -3,8 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import styles from "../css/CustomersList.module.css";
 import CustomerListItem from "./CustomerListItem";
 
-const CustomersList = (props) => {
-  const { customersList } = props;
+const CustomersList = ({customersList}) => {
   return (
     <section className={styles.customersListSection}>
       <ListGroup>

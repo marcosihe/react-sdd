@@ -13,7 +13,6 @@ const Main = () => {
   useEffect(() => {
     apiRequest(setCustomers);
   }, [])
-  console.log(customers);
 
   return (
     <main>
@@ -28,7 +27,7 @@ const Main = () => {
           <Contact />
         </Route>
         <Route exact path="/deudores/nuevocliente">
-          <AddCustomer />
+          <AddCustomer setCustomers={setCustomers}/>
         </Route>
         <Route exact path="/*">
           <Error404 />

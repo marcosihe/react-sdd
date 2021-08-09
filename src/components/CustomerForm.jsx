@@ -7,13 +7,15 @@ import {
   validateNames,
 } from "../helpers/validations.js";
 import { successAlert, errorAlert } from "../helpers/alerts";
+import { apiRequest } from "../helpers/apiRequest";
 
-const AddCustomer = () => {
+const AddCustomer = ({ setCustomers }) => {
   const URL = process.env.REACT_APP_API_URL;
+  const responseStatus_post = 201;
 
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [nickName, setNickName] = useState("");
+  const [nickName, setNickName] = useState("sin alias");
   const [numberPart1, setNumberPart1] = useState("");
   const [numberPart2, setNumberPart2] = useState("");
   const [address, setAddress] = useState("");
@@ -29,7 +31,7 @@ const AddCustomer = () => {
     ) {
       // Enviar datos a la API
       setError(false);
-      // Crear objeto
+      // Objeto para enviar mediante el método POST
       const customer = {
         name: name,
         lastName: lastName,
@@ -39,7 +41,7 @@ const AddCustomer = () => {
         address: address,
         history: {},
       };
-      // enviar el request POST
+      // POST Request
       try {
         const header = {
           method: "POST",
@@ -51,9 +53,10 @@ const AddCustomer = () => {
 
         const response = await fetch(URL, header);
 
-        if ((await response.status) === 201) {
+        if ((await response.status) === responseStatus_post) {
           successAlert();
           e.target.reset();
+          apiRequest(setCustomers); // Actualiza la lista con el nuevo cliente
         }
       } catch (error) {
         console.log(error);
