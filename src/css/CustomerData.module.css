@@ -1,0 +1,31 @@
+.dataParagraph {
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.hrCustomerData {
+    margin-bottom: 0.15rem;
+    margin-top: 0.15rem;
+    max-width: 55vw;
+}
+
+.mapPinIcon {
+    color: #dc3545;
+}
+
+.mobileAltIcon {
+    color: #198754;
+}
+
+.nickName {
+    color: #6c757d;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .hrCustomerData {
+        width: 40vw;
+        margin-left: 10vw;
+    }
+}

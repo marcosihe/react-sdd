@@ -14,6 +14,7 @@ const CustomersList = ({customersList}) => {
             customerLastName={item.lastName}
             customerNickName={item.nickName}
             customerDebt={item.currentDebt}
+            id={item.id}
           />
         ))}
       </ListGroup>

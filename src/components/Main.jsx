@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Error404 from "./pages/Error404";
 import AddCustomer from "./AddCustomer";
 import { apiRequest } from "../helpers/apiRequest";
+import CustomerDetails from "./CustomerDetails";
 
 const Main = () => {
   const [customers, setCustomers] = useState([]);
@@ -28,6 +29,9 @@ const Main = () => {
         </Route>
         <Route exact path="/deudores/nuevocliente">
           <AddCustomer setCustomers={setCustomers}/>
+        </Route>
+        <Route exact path="/deudores/detalles/:id">
+          <CustomerDetails/>
         </Route>
         <Route exact path="/*">
           <Error404 />

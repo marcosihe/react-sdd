@@ -16,13 +16,18 @@ const CustomerListItem = (props) => {
           {customerLastName}, {customerName}
         </p>
         <div className={styles.debtContainer}>
-          <Link to={`/deudores/detalles/editar/${id}`} className={styles.customerDebtLink}>${customerDebt}</Link>
+          <Link
+            to={`/deudores/detalles/editar/${id}`}
+            className={styles.customerDebtLink}
+          >
+            ${customerDebt}
+          </Link>
           <EditDebtButton id={id} />
         </div>
       </div>
       <div className={styles.customerDataContainer}>
         <p className={styles.customerNickName}>({customerNickName})</p>
-        <ViewDetailsButton />
+        <ViewDetailsButton id={id} />
       </div>
     </ListGroup.Item>
   );
