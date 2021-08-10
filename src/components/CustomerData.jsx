@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const CustomerData = (props) => {
   const { name, lastName, nickName, phoneNumber, address } = props;
   return (
-    <>
+    <div className={styles.personalData}>
       <h2>
         {lastName}Herrera, Marcos Ezequiel{name}
       </h2>
@@ -29,7 +29,7 @@ const CustomerData = (props) => {
           <FontAwesomeIcon icon={faMapPin} className={styles.mapPinIcon} />
         </p>
       ) : null}
-    </>
+    </div>
   );
 };
 

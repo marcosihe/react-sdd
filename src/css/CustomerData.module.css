@@ -23,6 +23,12 @@
     margin-top: 0.1rem;
 }
 
+.personalData {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
 @media screen and (min-width: 1024px) {
     .hrCustomerData {
         width: 40vw;
