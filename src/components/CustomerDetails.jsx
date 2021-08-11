@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import styles from "../css/CustomerDetails.module.css";
 import CurrentDebt from "./CurrentDebt";
 import CustomerData from "./CustomerData";
+import ShoppingHistory from "./ShoppingHistory";
 
 const CustomerDetails = () => {
   return (
@@ -17,12 +18,7 @@ const CustomerDetails = () => {
         <CustomerData className={styles.customerData} />
       </section>
       <CurrentDebt/>
-      <section>
-        <h2>Historial de compras</h2>
-        <p>Monto de la compra: $650</p>
-        <p>Conceptos de la compra: Frutas, leche, huevos.</p>
-        <p>Fecha: 03/11/2021</p>
-      </section>
+      <ShoppingHistory/>
     </Container>
   );
 };

@@ -1,0 +1,14 @@
+.shoppingHistoryTitle {
+    margin: 1rem;
+}
+
+.shoppingHistoryIcon {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+.ShoppingHistoryTitleContainer {
+    display: flex;
+}

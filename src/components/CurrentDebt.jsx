@@ -9,7 +9,7 @@ const CurrentDebt = ({ currentDebt }) => {
   return (
     <section className={styles.currentDebtContainer}>
       <div className={styles.amountContainer}>
-        <div className={styles.debtAmount}>${currentDebt}</div>
+        <div className={styles.debtAmount}>$ {currentDebt}</div>
         <FontAwesomeIcon
           icon={faHandPointLeft}
           className={styles.handPointLeftIcon}
