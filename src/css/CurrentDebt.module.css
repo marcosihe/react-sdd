@@ -1,0 +1,71 @@
+.amountContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amountToPayLabel {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0.15rem;
+}
+
+.currentDebtContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.currentDebtForm {
+    display: flex;
+    justify-content: center;
+}
+
+.currentDebtText {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 1.75rem;
+    margin: 0.5rem;
+}
+
+.debtAmount {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #dc3545;
+    margin: 0.5rem;
+}
+
+.handPointLeftIcon {
+    font-size: 2.5rem;
+    color: #6c757d;
+    margin: 0.5rem;
+}
+
+.payButton {
+    margin-left: 1rem;
+}
+
+.payForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    .amountContainer {
+        justify-content: center;
+    }
+    .currentDebtText {
+       justify-content: center;
+    }
+    .payForm {
+        justify-content: center;
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .currentDebtForm {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
