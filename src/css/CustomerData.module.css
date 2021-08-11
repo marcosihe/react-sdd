@@ -6,7 +6,7 @@
 .hrCustomerData {
     margin-bottom: 0.15rem;
     margin-top: 0.15rem;
-    max-width: 55vw;
+    max-width: 40vw;
 }
 
 .mapPinIcon {
@@ -29,9 +29,8 @@
     width: 60vw;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .hrCustomerData {
-        width: 40vw;
         margin-left: 10vw;
     }
 }

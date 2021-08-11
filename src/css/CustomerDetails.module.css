@@ -26,8 +26,11 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .personalDataContainer {
         text-align: center;
+    }
+    .detailPersonIcon {
+        font-size: 10rem;
     }
 }
