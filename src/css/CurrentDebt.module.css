@@ -28,7 +28,8 @@
     flex-wrap: wrap;
 
     font-size: 1.75rem;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.25rem;
 }
 
 .debtAmount {
@@ -41,7 +42,8 @@
 .handPointLeftIcon {
     font-size: 2.5rem;
     color: #6c757d;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.25rem;
 }
 
 .payButton {
@@ -66,9 +68,19 @@
         margin-left: 1rem;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .currentDebtForm {
         flex-wrap: wrap;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .currentDebtText{
+        margin-top: 0;
+    }
+    .payButton {
+        margin-top: 0.5rem;
+        margin-left: 0;
     }
 }

@@ -1,12 +1,7 @@
-.customerData {
-    display: flex;
-}
-
-.detailPersonIcon {
-    width: 30vw;
-    font-size: 7.5rem;
-    margin-right: 1rem;
-    color: #212529;
+.customerDetailsContainer{
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .personalDataContainer {
@@ -17,10 +12,7 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 668px) {
-    .detailPersonIcon {
-        margin-right: 0.25rem;
-    }
+@media screen and (max-width: 767px) {
     .personalDataContainer {
         justify-content: space-between;
     }
@@ -30,7 +22,15 @@
     .personalDataContainer {
         text-align: center;
     }
-    .detailPersonIcon {
-        font-size: 10rem;
+    .customerDetailsContainer {
+        padding-left: 9vw;
+    padding-right: 9vw;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .customerDetailsContainer{
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 }

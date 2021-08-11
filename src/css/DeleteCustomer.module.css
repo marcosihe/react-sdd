@@ -1,0 +1,25 @@
+.deleteCustomerButton {
+    width: 6rem;
+    margin-top: 1rem;
+}
+
+.deleteCustomerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailPersonIcon {
+    width: 30vw;
+    font-size: 7.5rem;
+    margin-right: 0.25rem;
+    color: #212529;
+}
+
+@media screen and (min-width: 767px) {
+    .detailPersonIcon {
+        font-size: 10rem;
+    }
+    .deleteCustomerButton{
+        width: 138px;
+    }
+}
