@@ -5,7 +5,6 @@ import { Form, Button } from "react-bootstrap";
 import styles from "../css/CurrentDebt.module.css";
 
 const CurrentDebt = ({ currentDebt }) => {
-  currentDebt = 1250; //monto de prueba para maquetado
   return (
     <section className={styles.currentDebtContainer}>
       <div className={styles.amountContainer}>

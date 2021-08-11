@@ -1,7 +1,6 @@
 const responseStatus = 200;
-const URL = process.env.REACT_APP_API_URL;
 
-const apiRequest = async(setState) => {
+const apiRequest = async(setState, URL) => {
     try {
       const response = await fetch(URL);
       if (response.status === responseStatus) {

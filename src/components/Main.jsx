@@ -10,10 +10,12 @@ import CustomerDetails from "./CustomerDetails";
 
 const Main = () => {
   const [customers, setCustomers] = useState([]);
+  const URL = process.env.REACT_APP_API_URL;
+  const [customer, setCustomer] = useState([]);
 
   useEffect(() => {
-    apiRequest(setCustomers);
-  }, [])
+    apiRequest(setCustomers, URL);
+  }, [URL])
 
   return (
     <main>
@@ -31,7 +33,7 @@ const Main = () => {
           <AddCustomer setCustomers={setCustomers}/>
         </Route>
         <Route exact path="/deudores/detalles/:id">
-          <CustomerDetails/>
+          <CustomerDetails customer={customer}/>
         </Route>
         <Route exact path="/*">
           <Error404 />

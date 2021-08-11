@@ -4,7 +4,8 @@ import styles from "../css/ShoppingHistory.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown, faHistory } from "@fortawesome/free-solid-svg-icons";
 
-const ShoppingHistory = () => {
+const ShoppingHistory = ({history}) => {
+  console.log(history)
   return (
     <section>
       <div className={styles.ShoppingHistoryTitleContainer}>
@@ -12,7 +13,7 @@ const ShoppingHistory = () => {
         <FontAwesomeIcon icon={faHistory} className={styles.shoppingHistoryIcon} />
         <FontAwesomeIcon icon={faCartArrowDown} className={styles.shoppingHistoryIcon} />
       </div>
-      <ShoppingHistoryList />
+      <ShoppingHistoryList history={history}/>
     </section>
   );
 };

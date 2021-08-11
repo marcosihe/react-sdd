@@ -7,26 +7,27 @@
       "phoneNumber": "381645454",
       "currentDebt": 2450,
       "address": "Bº Colombres",
-      "history": {
-        "operation_1": {
+      "history": [
+        {
+        "id_operation": 1,
           "debt": 120,
           "concept": "Frutas: bananas y naranjas",
-          "date": "",
-          "id": 1
+          "date": "10/62021"
         },
-        "operation_2": {
+        {
+          "id_operation": 2,
           "debt": 620,
           "concept": "Frutas, leche y 1 bandeja de huevos",
-          "date": "",
-          "id": 2
+          "date": "18/62021"
         },
-        "operation_3": {
+        {
+          "id_operation": 3,
           "debt": 370,
           "concept": "Frutas, Gaseosa Coca Cola y chocolates",
-          "date": "",
-          "id": 3
+          "date": "27/62021"
         }
-      },
+      ],
+        
       "id": 1
     },
     {
@@ -36,26 +37,26 @@
       "phoneNumber": "3815474747",
       "currentDebt": 1254,
       "address": "Bº PiedraBuena",
-      "history": {
-        "operation_1": {
-          "debt": 220,
-          "concept": "Coca Cola",
-          "date": "",
-          "id": 1
-        },
-        "operation_2": {
+      "history": [
+        {
+        "id_operation": 1,
           "debt": 120,
-          "concept": "Leche",
-          "date": "",
-          "id": 2
+          "concept": "Frutas: bananas y naranjas",
+          "date": "20/5/2021"
         },
-        "operation_3": {
-          "debt": 700,
-          "concept": "Fernet",
-          "date": "",
-          "id": 3
+        {
+          "id_operation": 2,
+          "debt": 400,
+          "concept": "Frutas, leche y 1 bandeja de huevos",
+          "date": "21/5/2021"
+        },
+        {
+          "id_operation": 3,
+          "debt": 480,
+          "concept": "Pizzas, y gaseosas",
+          "date": "28/5/2021"
         }
-      },
+      ],
       "id": 2
     },
     {
@@ -65,20 +66,26 @@
       "phoneNumber": "3812747484",
       "currentDebt": 2315,
       "address": "Honduras 1254",
-      "history": {
-        "operation_1": {
-          "debt": 300,
-          "concept": "Frutas y verduras",
-          "date": "",
-          "id": 1
+      "history": [
+        {
+        "id_operation": 1,
+          "debt": 350,
+          "concept": "Pollo y hamburguesas",
+          "date": "21/6/201"
         },
-        "operation_2": {
-          "debt": 600,
-          "concept": "Salame, queso, aceitunas y pre-pizzas",
-          "date": "",
-          "id": 2
+        {
+          "id_operation": 2,
+          "debt": 820,
+          "concept": "Frutas, queso, pollo, leche y hamburguesas",
+          "date": "22/6/201"
+        },
+        {
+          "id_operation": 3,
+          "debt": 370,
+          "concept": "Hamburguesas veganas",
+          "date": "23/6/201"
         }
-      },
+      ],
       "id": 3
     }
   ]

@@ -3,12 +3,12 @@ import styles from "../css/CustomerData.module.css";
 import { faMapPin, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CustomerData = (props) => {
-  const { name, lastName, nickName, phoneNumber, address } = props;
+const CustomerData = ({customer}) => {
+  const { name, lastName, nickName, phoneNumber, address } = customer;
   return (
     <div className={styles.personalData}>
       <h2>
-        {lastName}Herrera, Marcos Ezequiel{name}
+        {lastName}, {name}
       </h2>
       <p className={styles.nickName}>
       {nickName !== "" ? (
