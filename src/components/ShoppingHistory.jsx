@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartArrowDown, faHistory } from "@fortawesome/free-solid-svg-icons";
 
 const ShoppingHistory = ({history}) => {
-  console.log(history)
   return (
     <section>
       <div className={styles.ShoppingHistoryTitleContainer}>
