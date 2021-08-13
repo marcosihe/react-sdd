@@ -1,24 +1,18 @@
 import React from "react";
-import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../css/DeleteCustomer.module.css";
 import { Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 const DeleteCustomer = () => {
   return (
-    <div className={styles.deleteCustomerContainer}>
-      <FontAwesomeIcon
-        icon={faAddressBook}
-        className={styles.detailPersonIcon}
-      />
-      <Button
-        type="submit"
-        variant="outline-danger"
-        className={styles.deleteCustomerButton}
-      >
-        Eliminar
-      </Button>
-    </div>
+    <Button
+      type="submit"
+      variant="danger"
+      className={styles.deleteCustomerButton}
+    >
+      <FontAwesomeIcon icon={faTrashAlt} alt="botón de eliminar cliente" />
+    </Button>
   );
 };
 

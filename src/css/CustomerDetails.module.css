@@ -4,6 +4,19 @@
     padding-right: 5vw;
 }
 
+.detailsBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.detailPersonIcon {
+    font-size: 6rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.5rem;
+    color: #212529;
+}
+
 .personalDataContainer {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +31,10 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
+    .detailPersonIcon {
+        font-size: 10rem;
+    }
     .personalDataContainer {
         text-align: center;
     }
@@ -32,5 +48,8 @@
     .customerDetailsContainer{
         padding-left: 2vw;
         padding-right: 2vw;
+    }
+    .detailPersonIcon {
+        font-size: 5rem;
     }
 }
