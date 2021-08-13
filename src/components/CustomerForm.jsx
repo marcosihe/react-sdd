@@ -39,7 +39,7 @@ const AddCustomer = ({ setCustomers }) => {
         phoneNumber: numberPart1 + numberPart2,
         currentDebt: 0,
         address: address,
-        history: {},
+        history: [],
       };
       // POST Request
       try {
@@ -56,7 +56,7 @@ const AddCustomer = ({ setCustomers }) => {
         if ((await response.status) === responseStatus_post) {
           successAlert();
           e.target.reset();
-          apiRequest(setCustomers); // Actualiza la lista con el nuevo cliente
+          apiRequest(setCustomers, URL); // Actualiza la lista con el nuevo cliente
         }
       } catch (error) {
         console.log(error);

@@ -3,7 +3,7 @@ import styles from "../css/CustomerData.module.css";
 import { faMapPin, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CustomerData = ({customer}) => {
+const CustomerData = ({ customer }) => {
   const { name, lastName, nickName, phoneNumber, address } = customer;
   return (
     <div className={styles.personalData}>
@@ -11,24 +11,19 @@ const CustomerData = ({customer}) => {
         {lastName}, {name}
       </h2>
       <p className={styles.nickName}>
-      {nickName !== "" ? (
-        `(${nickName})`
-      ) : "(...)"}</p>
+        {nickName !== "" ? `(${nickName})` : "(Sin alias)"}
+      </p>
       <hr className={styles.hrCustomerData} />
       <p className={styles.dataParagraph}>
-        Celular: 
-        {phoneNumber !== '' ? ` ${phoneNumber} ` : ` - `}
-        
+        Celular:
+        {phoneNumber !== "" ? ` ${phoneNumber} ` : ` (no especificado) `}
         <FontAwesomeIcon icon={faMobileAlt} className={styles.mobileAltIcon} />
       </p>
-
-      {address !== "" ? (
-        <p className={styles.dataParagraph}>
-          Domicilio:
-          {address !== '' ? ` ${address} ` : ` - `}
-          <FontAwesomeIcon icon={faMapPin} className={styles.mapPinIcon} />
-        </p>
-      ) : null}
+      <p className={styles.dataParagraph}>
+        Domicilio:
+        {address !== "" ? ` ${address} ` : ` (no especificado) `}
+        <FontAwesomeIcon icon={faMapPin} className={styles.mapPinIcon} />
+      </p>
     </div>
   );
 };

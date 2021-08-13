@@ -9,7 +9,7 @@
       "address": "Bº Colombres",
       "history": [
         {
-        "id_operation": 1,
+          "id_operation": 1,
           "debt": 120,
           "concept": "Frutas: bananas y naranjas",
           "date": "10/62021"
@@ -27,7 +27,6 @@
           "date": "27/62021"
         }
       ],
-        
       "id": 1
     },
     {
@@ -39,7 +38,7 @@
       "address": "Bº PiedraBuena",
       "history": [
         {
-        "id_operation": 1,
+          "id_operation": 1,
           "debt": 120,
           "concept": "Frutas: bananas y naranjas",
           "date": "20/5/2021"
@@ -68,7 +67,7 @@
       "address": "Honduras 1254",
       "history": [
         {
-        "id_operation": 1,
+          "id_operation": 1,
           "debt": 350,
           "concept": "Pollo y hamburguesas",
           "date": "21/6/201"
@@ -87,6 +86,16 @@
         }
       ],
       "id": 3
+    },
+    {
+      "name": "Marcos Ezequiel",
+      "lastName": "Herrera",
+      "nickName": "sin alias",
+      "phoneNumber": "3816703322",
+      "currentDebt": 0,
+      "address": "",
+      "history": [],
+      "id": 4
     }
   ]
 }
