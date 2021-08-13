@@ -16,12 +16,12 @@ const CustomerData = ({ customer }) => {
       <hr className={styles.hrCustomerData} />
       <p className={styles.dataParagraph}>
         Celular:
-        {phoneNumber !== "" ? ` ${phoneNumber} ` : ` (no especificado) `}
+        {phoneNumber !== "" ? ` ${phoneNumber} ` : ` (...) `}
         <FontAwesomeIcon icon={faMobileAlt} className={styles.mobileAltIcon} />
       </p>
       <p className={styles.dataParagraph}>
         Domicilio:
-        {address !== "" ? ` ${address} ` : ` (no especificado) `}
+        {address !== "" ? ` ${address} ` : ` (...) `}
         <FontAwesomeIcon icon={faMapPin} className={styles.mapPinIcon} />
       </p>
     </div>
