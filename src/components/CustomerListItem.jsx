@@ -17,7 +17,7 @@ const CustomerListItem = (props) => {
         </p>
         <div className={styles.debtContainer}>
           <Link
-            to={`/deudores/detalles/editar/${id}`}
+            to={`/deudores/detalles/:${id}`}
             className={styles.customerDebtLink}
           >
             ${customerDebt}
