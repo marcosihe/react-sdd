@@ -1,0 +1,26 @@
+.deletedCustomerViewContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 100vw;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.deletedCustomerViewIcon {
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+.deletedCustomerViewIconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.deletedCustomerViewText {
+    font-size: 2rem;
+}

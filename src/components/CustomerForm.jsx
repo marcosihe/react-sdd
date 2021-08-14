@@ -60,7 +60,7 @@ const AddCustomer = ({ setCustomers }) => {
         }
       } catch (error) {
         console.log(error);
-        errorAlert();
+        errorAlert("¡Los datos no se cargaron!");
       }
     } else {
       // Datos erroneos: mostrar mensaje de error

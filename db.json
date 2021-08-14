@@ -86,16 +86,6 @@
         }
       ],
       "id": 3
-    },
-    {
-      "name": "Marcos Ezequiel",
-      "lastName": "Herrera",
-      "nickName": "sin alias",
-      "phoneNumber": "3816703322",
-      "currentDebt": 0,
-      "address": "",
-      "history": [],
-      "id": 4
     }
   ]
 }

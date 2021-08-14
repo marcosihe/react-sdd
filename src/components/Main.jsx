@@ -32,7 +32,7 @@ const Main = () => {
           <AddCustomer setCustomers={setCustomers}/>
         </Route>
         <Route exact path="/deudores/detalles/:id">
-          <CustomerDetails />
+          <CustomerDetails setCustomers={setCustomers} />
         </Route>
         <Route exact path="/*">
           <Error404 />

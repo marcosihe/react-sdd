@@ -9,20 +9,26 @@ import ShoppingHistory from "./ShoppingHistory";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EditCustomer from "./EditCustomer";
+import DeletedCustomerView from "./DeletedCustomerView";
 
-const CustomerDetails = () => {
+const CustomerDetails = ({setCustomers}) => {
   const { id } = useParams(); // id == ':id'
   const aux_id = Array.from(id);
   const URL = `${process.env.REACT_APP_API_URL}/${aux_id[1]}`;
 
   const [customer, setCustomer] = useState([]);
+  const [deleted, setDeleted] = useState(false);
 
   useEffect(() => {
     apiRequest(setCustomer, URL);
   }, [URL]);
 
   return (
-    <section className={styles.customerDetailsContainer}>
+    <>
+    {deleted ? (<DeletedCustomerView/>)
+    :
+    (
+      <section className={styles.customerDetailsContainer}>
       <section className={styles.personalDataContainer}>
         <div>
           <FontAwesomeIcon
@@ -31,8 +37,8 @@ const CustomerDetails = () => {
             alt="Logo de cliente"
           />
           <div className={styles.detailsBtnContainer}>
-            <EditCustomer customer={customer.id} />
-            <DeleteCustomer customer={customer.id} />
+            <EditCustomer id={customer.id} />
+            <DeleteCustomer id={customer.id} setCustomers={setCustomers} setDeleted={setDeleted}/>
           </div>
         </div>
         <CustomerData customer={customer} />
@@ -40,6 +46,8 @@ const CustomerDetails = () => {
       <CurrentDebt currentDebt={customer.currentDebt} />
       <ShoppingHistory history={customer.history} />
     </section>
+    )}
+    </>
   );
 };
 
