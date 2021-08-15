@@ -1,72 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form, Row, Col, Button, Alert } from "react-bootstrap";
 import styles from "../css/CustomerForm.module.css";
-import {
-  validateNumber_1,
-  validateNumber_2,
-  validateNames,
-} from "../helpers/validations.js";
-import { successAlert, errorAlert } from "../helpers/alerts";
-import { apiRequest } from "../helpers/apiRequest";
 
-const AddCustomer = ({ setCustomers }) => {
-  const URL = process.env.REACT_APP_API_URL;
-  const responseStatus_post = 201;
 
-  const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [nickName, setNickName] = useState("sin alias");
-  const [numberPart1, setNumberPart1] = useState("");
-  const [numberPart2, setNumberPart2] = useState("");
-  const [address, setAddress] = useState("");
-  const [error, setError] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // Validaciones
-    if (
-      validateNumber_1(numberPart1) &&
-      validateNumber_2(numberPart2) &&
-      validateNames(name, lastName)
-    ) {
-      // Enviar datos a la API
-      setError(false);
-      // Objeto para enviar mediante el método POST
-      const customer = {
-        name: name,
-        lastName: lastName,
-        nickName: nickName,
-        phoneNumber: numberPart1 + numberPart2,
-        currentDebt: 0,
-        address: address,
-        history: [],
-      };
-      // POST Request
-      try {
-        const header = {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(customer),
-        };
-
-        const response = await fetch(URL, header);
-
-        if ((await response.status) === responseStatus_post) {
-          successAlert();
-          e.target.reset();
-          apiRequest(setCustomers, URL); // Actualiza la lista con el nuevo cliente
-        }
-      } catch (error) {
-        console.log(error);
-        errorAlert("¡Los datos no se cargaron!");
-      }
-    } else {
-      // Datos erroneos: mostrar mensaje de error
-      setError(true);
-    }
-  };
+const CustomerForm = ({ setName, setLastName, setNickName, setNumberPart1, setNumberPart2, setAddress, handleSubmit, error }) => {
 
   return (
     <Form className="mb-3 mt-3" onSubmit={handleSubmit}>
@@ -96,7 +33,7 @@ const AddCustomer = ({ setCustomers }) => {
         <Form.Label>Apodo</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Chavela"
+          placeholder="doña rosa"
           onChange={(e) => setNickName(e.target.value)}
         />
       </Form.Group>
@@ -147,4 +84,4 @@ const AddCustomer = ({ setCustomers }) => {
   );
 };
 
-export default AddCustomer;
+export default CustomerForm;

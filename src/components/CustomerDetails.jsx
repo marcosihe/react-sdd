@@ -8,7 +8,7 @@ import DeleteCustomer from "./DeleteCustomer";
 import ShoppingHistory from "./ShoppingHistory";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import EditCustomer from "./EditCustomer";
+import EditCustomerButton from "./EditCustomerButton";
 import DeletedCustomerView from "./DeletedCustomerView";
 
 const CustomerDetails = ({setCustomers}) => {
@@ -37,7 +37,7 @@ const CustomerDetails = ({setCustomers}) => {
             alt="Logo de cliente"
           />
           <div className={styles.detailsBtnContainer}>
-            <EditCustomer id={customer.id} />
+            <EditCustomerButton id={customer.id} />
             <DeleteCustomer id={customer.id} setCustomers={setCustomers} setDeleted={setDeleted}/>
           </div>
         </div>

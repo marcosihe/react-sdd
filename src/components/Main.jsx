@@ -7,6 +7,7 @@ import Error404 from "./pages/Error404";
 import AddCustomer from "./AddCustomer";
 import { apiRequest } from "../helpers/apiRequest";
 import CustomerDetails from "./CustomerDetails";
+import EditCustomer from "./EditCustomer";
 
 const Main = () => {
   const [customers, setCustomers] = useState([]);
@@ -33,6 +34,9 @@ const Main = () => {
         </Route>
         <Route exact path="/deudores/detalles/:id">
           <CustomerDetails setCustomers={setCustomers} />
+        </Route>
+        <Route exact path="/deudores/detalles/editar/:id">
+          <EditCustomer/>
         </Route>
         <Route exact path="/*">
           <Error404 />

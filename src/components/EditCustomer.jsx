@@ -1,16 +1,15 @@
-import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { useParams } from "react-router-dom";
+import EditCustomerForm from "./EditCustomerForm";
 
 const EditCustomer = () => {
+  console.log(useParams());
   return (
-    <Button type="submit" variant="warning">
-      <FontAwesomeIcon
-        icon={faPencilAlt}
-        alt="Botón de editar datos del cliente"
-      />
-    </Button>
+    <Container>
+      <h1>Editar Cliente</h1>
+      <EditCustomerForm />
+    </Container>
   );
 };
 
