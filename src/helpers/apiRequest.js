@@ -55,7 +55,7 @@ const deleteRequest = (id, setState, URL, setDeleted) => {
 };
 
 // POST
-const postMethodObject = (objectToSend) => {
+const postMethod = (objectToSend) => {
   return {
     method: "POST",
     headers: {
@@ -65,4 +65,13 @@ const postMethodObject = (objectToSend) => {
   };
 };
 
-export { apiRequest, deleteRequest, postMethodObject };
+// PUT
+const putMethod = (objectToSend) => {
+  return {
+    method: "PUT",
+    headers: {"Content-Type":"application/json"},
+    body: JSON.stringify(objectToSend)
+  }
+}
+
+export { apiRequest, deleteRequest, postMethod, putMethod };

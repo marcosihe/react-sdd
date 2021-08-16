@@ -35,8 +35,8 @@ const Main = () => {
         <Route exact path="/deudores/detalles/:id">
           <CustomerDetails setCustomers={setCustomers} />
         </Route>
-        <Route exact path="/deudores/detalles/editar/:id">
-          <EditCustomer/>
+        <Route exact path="/deudores/editar/:id">
+          <EditCustomer setCustomers={setCustomers}/>
         </Route>
         <Route exact path="/*">
           <Error404 />

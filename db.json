@@ -4,7 +4,7 @@
       "name": "Marcelo",
       "lastName": "Bianchi",
       "nickName": "El pelao",
-      "phoneNumber": "381645454",
+      "phoneNumber": "3816454547",
       "currentDebt": 2450,
       "address": "Bº Colombres",
       "history": [
@@ -62,7 +62,7 @@
       "name": "María",
       "lastName": "Stoessel",
       "nickName": "La chavela",
-      "phoneNumber": "3812747484",
+      "phoneNumber": "29525747484",
       "currentDebt": 2315,
       "address": "Honduras 1254",
       "history": [
@@ -88,34 +88,24 @@
       "id": 3
     },
     {
-      "name": "Denis",
-      "lastName": "Lezana",
-      "nickName": "De",
-      "phoneNumber": "3815141512",
+      "name": "Lucia",
+      "lastName": "Lopez",
+      "nickName": "luciaa",
+      "phoneNumber": "112565478",
       "currentDebt": 0,
-      "address": "Cordoba 222",
+      "address": "Honduras 1234",
       "history": [],
       "id": 4
     },
     {
-      "name": "Lucia",
-      "lastName": "Lobo",
-      "nickName": "Lu",
-      "phoneNumber": "3815121212",
+      "name": "Maria",
+      "lastName": "Cabrera",
+      "nickName": "",
+      "phoneNumber": "115623547",
       "currentDebt": 0,
       "address": "",
       "history": [],
       "id": 5
-    },
-    {
-      "name": "Marcos Ezequiel",
-      "lastName": "Herrera",
-      "nickName": "sin alias",
-      "phoneNumber": "3816703322",
-      "currentDebt": 0,
-      "address": "General Paz 544",
-      "history": [],
-      "id": 6
     }
   ]
 }

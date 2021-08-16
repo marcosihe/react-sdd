@@ -6,7 +6,7 @@ import styles from '../css/ViewDetailsButton.module.css'
 
 const ViewDetailsButton = ({id}) => {
     return (
-        <Link to={`/deudores/detalles/:${id}`} className="btn btn-outline-secondary">
+        <Link to={`/deudores/detalles/${id}`} className="btn btn-outline-secondary">
           <span>Ver detalle </span>
           <FontAwesomeIcon
             alt="Ícono de 'ver detalles'"

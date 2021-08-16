@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const EditCustomerButton = ({id}) => {
   return (
-    <Link to={`/deudores/detalles/editar/:${id}`} className="btn btn-outline-warning">
+    <Link to={`/deudores/editar/${id}`} className="btn btn-outline-warning">
       <FontAwesomeIcon
         icon={faPencilAlt}
         alt="Botón de editar datos del cliente"

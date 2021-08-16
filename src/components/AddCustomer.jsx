@@ -3,50 +3,32 @@ import { Container } from "react-bootstrap";
 import CustomerForm from "./CustomerForm";
 import styles from "../css/AddCustomer.module.css";
 import {
-  validateNumber_1,
-  validateNumber_2,
+  validateAreaCode,
+  validateBodyNumber,
   validateNames,
 } from "../helpers/validations.js";
 import { successAlert, errorAlert } from "../helpers/alerts";
-import { apiRequest, postMethodObject } from "../helpers/apiRequest";
+import { apiRequest, postMethod } from "../helpers/apiRequest";
+import { buildObjectToSend } from "../helpers/objectTosend";
 
 const AddCustomer = ({ setCustomers }) => {
   const URL = process.env.REACT_APP_API_URL;
-  const responseStatus_post = 201;
+  const responseStatus = 201;
 
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [nickName, setNickName] = useState("sin alias");
+  const [nickName, setNickName] = useState("");
   const [numberPart1, setNumberPart1] = useState("");
   const [numberPart2, setNumberPart2] = useState("");
   const [address, setAddress] = useState("");
   const [error, setError] = useState(false);
 
-  const buildObjectToSend = (
-    name,
-    lastName,
-    nickName,
-    numberPart1,
-    numberPart2,
-    address
-  ) => {
-    return {
-      name: name,
-      lastName: lastName,
-      nickName: nickName,
-      phoneNumber: numberPart1 + numberPart2,
-      currentDebt: 0,
-      address: address,
-      history: [],
-    };
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Validaciones
+    // Validaciones del formulario
     if (
-      validateNumber_1(numberPart1) &&
-      validateNumber_2(numberPart2) &&
+      validateAreaCode(numberPart1) &&
+      validateBodyNumber(numberPart2) &&
       validateNames(name, lastName)
     ) {
       // Enviar datos a la API
@@ -55,19 +37,21 @@ const AddCustomer = ({ setCustomers }) => {
       try {
         const response = await fetch(
           URL,
-          postMethodObject(
+          postMethod(
             buildObjectToSend(
               name,
               lastName,
               nickName,
               numberPart1,
               numberPart2,
-              address
+              0, // valor inicial de la deuda (currentDebt variable)
+              address,
+              [] // valor inicial del historial de compras (history variable)
             )
           )
         );
 
-        if ((await response.status) === responseStatus_post) {
+        if ((await response.status) === responseStatus) {
           successAlert();
           e.target.reset();
           apiRequest(setCustomers, URL); // Actualiza la lista con el nuevo cliente

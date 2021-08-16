@@ -1,21 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import styles from "../css/CustomerDetails.module.css";
-import { apiRequest } from "../helpers/apiRequest";
 import CurrentDebt from "./CurrentDebt";
 import CustomerData from "./CustomerData";
+import EditCustomerButton from "./EditCustomerButton";
 import DeleteCustomer from "./DeleteCustomer";
+import DeletedCustomerView from "./DeletedCustomerView";
 import ShoppingHistory from "./ShoppingHistory";
+import { apiRequest } from "../helpers/apiRequest";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import EditCustomerButton from "./EditCustomerButton";
-import DeletedCustomerView from "./DeletedCustomerView";
+import styles from "../css/CustomerDetails.module.css";
 
 const CustomerDetails = ({setCustomers}) => {
-  const { id } = useParams(); // id == ':id'
-  const aux_id = Array.from(id);
-  const URL = `${process.env.REACT_APP_API_URL}/${aux_id[1]}`;
-
+  const URL = `${process.env.REACT_APP_API_URL}/${useParams().id}`;
   const [customer, setCustomer] = useState([]);
   const [deleted, setDeleted] = useState(false);
 
