@@ -4,21 +4,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "react-bootstrap";
 import NewPurchaseModal from "./NewPurchaseModal";
 
-const AddDebtButton = () => {
+const AddDebtButton = ({ text }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const handleSubmit = e => {
-      e.preventDefault();
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
-      <Button variant="outline-success" onClick={handleShow}>
-        <FontAwesomeIcon icon={faCartArrowDown} alt="Logo de carro de compras" />
+      <Button variant="outline-danger" onClick={handleShow} className="">
+        {text ? (
+          <span>Nueva Compra</span>
+        ) : (
+          <FontAwesomeIcon
+            icon={faCartArrowDown}
+            alt="Logo de carro de compras"
+          />
+        )}
       </Button>
 
-      <NewPurchaseModal show={show} handleClose={handleClose} handleSubmit={handleSubmit} />
+      <NewPurchaseModal
+        show={show}
+        handleClose={handleClose}
+        handleSubmit={handleSubmit}
+      />
     </>
   );
 };

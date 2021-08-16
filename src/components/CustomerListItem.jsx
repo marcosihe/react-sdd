@@ -21,7 +21,7 @@ const CustomerListItem = (props) => {
           >
             ${customerDebt}
           </Link>
-          <AddDebtButton id={id} />
+          <AddDebtButton id={id} text={false} />
         </div>
       </div>
       <div className={styles.customerDataContainer}>

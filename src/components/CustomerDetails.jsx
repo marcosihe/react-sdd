@@ -10,8 +10,10 @@ import { apiRequest } from "../helpers/apiRequest";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../css/CustomerDetails.module.css";
+import PayDebtButton from "./PayDebtButton";
+import AddDebtButton from "./AddDebtButton";
 
-const CustomerDetails = ({setCustomers}) => {
+const CustomerDetails = ({ setCustomers }) => {
   const URL = `${process.env.REACT_APP_API_URL}/${useParams().id}`;
   const [customer, setCustomer] = useState([]);
   const [deleted, setDeleted] = useState(false);
@@ -22,28 +24,36 @@ const CustomerDetails = ({setCustomers}) => {
 
   return (
     <>
-    {deleted ? (<DeletedCustomerView/>)
-    :
-    (
-      <section className={styles.customerDetailsContainer}>
-      <section className={styles.personalDataContainer}>
-        <div>
-          <FontAwesomeIcon
-            icon={faAddressBook}
-            className={styles.detailPersonIcon}
-            alt="Logo de cliente"
-          />
-          <div className={styles.detailsBtnContainer}>
-            <EditCustomerButton id={customer.id} />
-            <DeleteCustomer id={customer.id} setCustomers={setCustomers} setDeleted={setDeleted}/>
+      {deleted ? (
+        <DeletedCustomerView />
+      ) : (
+        <section className={styles.customerDetailsContainer}>
+          <section className={styles.personalDataContainer}>
+            <div>
+              <FontAwesomeIcon
+                icon={faAddressBook}
+                className={styles.detailPersonIcon}
+                alt="Logo de cliente"
+              />
+              <div className={styles.detailsBtnContainer}>
+                <EditCustomerButton id={customer.id} />
+                <DeleteCustomer
+                  id={customer.id}
+                  setCustomers={setCustomers}
+                  setDeleted={setDeleted}
+                />
+              </div>
+            </div>
+            <CustomerData customer={customer} />
+          </section>
+          <CurrentDebt currentDebt={customer.currentDebt} />
+          <div className={styles.customerDetailsBtnContainer}>
+            <PayDebtButton />
+            <AddDebtButton text={true} />
           </div>
-        </div>
-        <CustomerData customer={customer} />
-      </section>
-      <CurrentDebt currentDebt={customer.currentDebt} />
-      <ShoppingHistory history={customer.history} />
-    </section>
-    )}
+          <ShoppingHistory history={customer.history} />
+        </section>
+      )}
     </>
   );
 };
