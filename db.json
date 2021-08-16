@@ -3,7 +3,7 @@
     {
       "name": "Marcelo",
       "lastName": "Bianchi",
-      "nickName": "El pelao",
+      "nickName": "Coco",
       "phoneNumber": "3816454547",
       "currentDebt": 2450,
       "address": "Bº Colombres",
@@ -61,7 +61,7 @@
     {
       "name": "María",
       "lastName": "Stoessel",
-      "nickName": "La chavela",
+      "nickName": "Chavela",
       "phoneNumber": "29525747484",
       "currentDebt": 2315,
       "address": "Honduras 1254",
@@ -86,26 +86,6 @@
         }
       ],
       "id": 3
-    },
-    {
-      "name": "Lucia",
-      "lastName": "Lopez",
-      "nickName": "luciaa",
-      "phoneNumber": "112565478",
-      "currentDebt": 0,
-      "address": "Honduras 1234",
-      "history": [],
-      "id": 4
-    },
-    {
-      "name": "Maria",
-      "lastName": "Cabrera",
-      "nickName": "",
-      "phoneNumber": "115623547",
-      "currentDebt": 0,
-      "address": "",
-      "history": [],
-      "id": 5
     }
   ]
 }
