@@ -3,7 +3,7 @@ import { ListGroup } from "react-bootstrap";
 import styles from "../css/CustomerListItem.module.css";
 import ViewDetailsButton from "./ViewDetailsButton";
 import { Link } from "react-router-dom";
-import EditCustomerButton from "./EditCustomerButton";
+import AddDebtButton from "./AddDebtButton";
 
 const CustomerListItem = (props) => {
   const { customerName, customerLastName, customerNickName, customerDebt, id } =
@@ -16,12 +16,12 @@ const CustomerListItem = (props) => {
         </p>
         <div className={styles.debtContainer}>
           <Link
-            to={`/deudores/detalles/:${id}`}
+            to={`/deudores/detalles/${id}`}
             className={styles.customerDebtLink}
           >
             ${customerDebt}
           </Link>
-          <EditCustomerButton id={id} />
+          <AddDebtButton id={id} />
         </div>
       </div>
       <div className={styles.customerDataContainer}>
