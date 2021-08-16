@@ -21,4 +21,12 @@ const validateNames = (name, lastName) => {
     }
 }
 
-export {validateAreaCode, validateBodyNumber, validateNames}
+const validatePayment = (payment, currentDebt) => {
+    if(payment <= 0 || payment > currentDebt){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+export {validateAreaCode, validateBodyNumber, validateNames, validatePayment}

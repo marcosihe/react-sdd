@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import CurrentDebt from "./CurrentDebt";
 import CustomerData from "./CustomerData";
@@ -17,10 +17,12 @@ const CustomerDetails = ({ setCustomers }) => {
   const URL = `${process.env.REACT_APP_API_URL}/${useParams().id}`;
   const [customer, setCustomer] = useState([]);
   const [deleted, setDeleted] = useState(false);
+  const [successfulPayment, setSuccessfulPayment] = useState(false);
+  const paymentRef = useRef(0);
 
   useEffect(() => {
     apiRequest(setCustomer, URL);
-  }, [URL]);
+  }, [URL, successfulPayment ]);
 
   return (
     <>
@@ -48,7 +50,12 @@ const CustomerDetails = ({ setCustomers }) => {
           </section>
           <CurrentDebt currentDebt={customer.currentDebt} />
           <div className={styles.customerDetailsBtnContainer}>
-            <PayDebtButton />
+            <PayDebtButton
+              customer={customer}
+              setCustomers={setCustomers}
+              paymentRef={paymentRef}
+              setSuccessfulPayment={setSuccessfulPayment}
+            />
             <AddDebtButton text={true} />
           </div>
           <ShoppingHistory history={customer.history} />

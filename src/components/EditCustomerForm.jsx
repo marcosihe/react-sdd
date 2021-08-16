@@ -98,7 +98,7 @@ const EditCustomerForm = ({
       </Form.Group>
       <div className={styles.buttonFormContainer}>
         <Button variant="success" type="submit" className="w-100">
-          Agregar Cliente
+          Guardar Cambios
         </Button>
       </div>
       {error === true ? (

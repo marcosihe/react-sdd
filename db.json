@@ -1,40 +1,20 @@
 {
   "debtors": [
     {
-      "name": "Marcelo",
+      "name": "Juan Carlos",
       "lastName": "Bianchi",
-      "nickName": "El pelao",
-      "phoneNumber": "3816454547",
-      "currentDebt": 2450,
-      "address": "Bº Colombres",
-      "history": [
-        {
-          "id_operation": 1,
-          "debt": 120,
-          "concept": "Frutas: bananas y naranjas",
-          "date": "10/62021"
-        },
-        {
-          "id_operation": 2,
-          "debt": 620,
-          "concept": "Frutas, leche y 1 bandeja de huevos",
-          "date": "18/62021"
-        },
-        {
-          "id_operation": 3,
-          "debt": 370,
-          "concept": "Frutas, Gaseosa Coca Cola y chocolates",
-          "date": "27/62021"
-        }
-      ],
+      "nickName": "topo",
+      "phoneNumber": "3816459336",
+      "currentDebt": 275,
+      "address": "EEUU 1220",
       "id": 1
     },
     {
       "name": "Luciano",
       "lastName": "Darín",
-      "nickName": "El chino",
+      "nickName": "Chino",
       "phoneNumber": "3815474747",
-      "currentDebt": 1254,
+      "currentDebt": 835,
       "address": "Bº PiedraBuena",
       "history": [
         {
@@ -88,24 +68,14 @@
       "id": 3
     },
     {
-      "name": "Lucia",
-      "lastName": "Lopez",
-      "nickName": "luciaa",
-      "phoneNumber": "112565478",
+      "name": "Pablo",
+      "lastName": "Alvarez",
+      "nickName": "Lucho",
+      "phoneNumber": "3816454778",
       "currentDebt": 0,
-      "address": "Honduras 1234",
+      "address": "General Paz 544",
       "history": [],
       "id": 4
-    },
-    {
-      "name": "Maria",
-      "lastName": "Cabrera",
-      "nickName": "",
-      "phoneNumber": "115623547",
-      "currentDebt": 0,
-      "address": "",
-      "history": [],
-      "id": 5
     }
   ]
 }
