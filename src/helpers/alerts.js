@@ -33,4 +33,12 @@ const successfulPaymentAlert = () => {
   );
 };
 
-export { successAlert, errorAlert, successfulDelete, successfulPaymentAlert };
+const successfulPurchaseAlert = () => {
+  Swal.fire(
+    "¡Compra efectuada!",
+    "¡La compra se agregó exitosamente!",
+    "success"
+  );
+};
+
+export { successAlert, errorAlert, successfulDelete, successfulPaymentAlert, successfulPurchaseAlert };

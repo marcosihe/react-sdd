@@ -18,11 +18,14 @@ const CustomerDetails = ({ setCustomers }) => {
   const [customer, setCustomer] = useState([]);
   const [deleted, setDeleted] = useState(false);
   const [successfulPayment, setSuccessfulPayment] = useState(false);
+  const [successfulPurchase, setSuccessfulPurchase] = useState(false);
   const paymentRef = useRef(0);
+  const purchaseRef = useRef(0);
+  const conceptRef = useRef("");
 
   useEffect(() => {
     apiRequest(setCustomer, URL);
-  }, [URL, successfulPayment ]);
+  }, [URL, successfulPayment, successfulPurchase]);
 
   return (
     <>
@@ -56,7 +59,13 @@ const CustomerDetails = ({ setCustomers }) => {
               paymentRef={paymentRef}
               setSuccessfulPayment={setSuccessfulPayment}
             />
-            <AddDebtButton text={true} />
+            <AddDebtButton
+              text={true}
+              customer={customer}
+              purchaseRef={purchaseRef}
+              conceptRef={conceptRef}
+              setSuccessfulPurchase={setSuccessfulPurchase}
+            />
           </div>
           <ShoppingHistory history={customer.history} />
         </section>

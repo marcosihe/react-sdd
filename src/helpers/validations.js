@@ -29,4 +29,12 @@ const validatePayment = (payment, currentDebt) => {
     }
 }
 
-export {validateAreaCode, validateBodyNumber, validateNames, validatePayment}
+const validatePurchaseAmount = (purchaseAmount) => {
+    if(purchaseAmount>0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+export {validateAreaCode, validateBodyNumber, validateNames, validatePayment, validatePurchaseAmount}
