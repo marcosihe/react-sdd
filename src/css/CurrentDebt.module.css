@@ -1,38 +1,15 @@
-.amountContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.amountToPayLabel {
-  font-size: 1rem;
-  color: #6c757d;
-  margin: 0.15rem;
-}
-
 .currentDebtContainer {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 
   margin-bottom: 1rem;
-
   box-shadow: 5px 5px 5px 4px #6c757d;
   border-radius: 15px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 0.5rem;
-}
-
-.currentDebtForm {
-  display: flex;
-  justify-content: center;
 }
 
 .currentDebtText {
-  display: flex;
-  flex-wrap: wrap;
-
   font-size: 1.25rem;
   margin-top: 0.5rem;
   margin-left: 0.25rem;
@@ -45,34 +22,9 @@
   margin: 0.5rem;
 }
 
-.handPointLeftIcon {
-  font-size: 2.5rem;
-  color: #6c757d;
-  margin-top: 0.5rem;
-  margin-right: 0.25rem;
-}
-
-.payButton {
-  margin-left: 1rem;
-  width: 7.5rem;
-}
-
-.payForm {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 @media screen and (min-width: 768px) {
-  .amountContainer {
-    justify-content: center;
-  }
   .currentDebtText {
-    justify-content: center;
     font-size: 1.75rem;
-  }
-  .payForm {
-    justify-content: center;
-    margin-left: 1rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -80,18 +32,7 @@
     margin-left: 0.5rem;
     margin-right: 0.75rem;
   }
-  .currentDebtForm {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
   .currentDebtText {
     margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  .payButton {
-    margin-top: 0.5rem;
-    margin-left: 0;
   }
 }

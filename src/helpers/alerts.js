@@ -25,4 +25,20 @@ const successfulDelete = () => {
   );
 };
 
-export { successAlert, errorAlert, successfulDelete };
+const successfulPaymentAlert = () => {
+  Swal.fire(
+    "Pago realizado",
+    "¡El pago se efectuó exitosamente!",
+    "success"
+  );
+};
+
+const successfulPurchaseAlert = () => {
+  Swal.fire(
+    "¡Compra efectuada!",
+    "¡La compra se agregó exitosamente!",
+    "success"
+  );
+};
+
+export { successAlert, errorAlert, successfulDelete, successfulPaymentAlert, successfulPurchaseAlert };

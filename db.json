@@ -9,83 +9,29 @@
       "address": "Bº Colombres",
       "history": [
         {
-          "id_operation": 1,
-          "debt": 120,
-          "concept": "Frutas: bananas y naranjas",
-          "date": "10/62021"
+          "id_operation": "117082021021115470",
+          "debt": 1200,
+          "concept": "Huevos, verduras, pizzas, queso y gaseosa",
+          "date": "17/08/2021"
         },
         {
-          "id_operation": 2,
-          "debt": 620,
-          "concept": "Frutas, leche y 1 bandeja de huevos",
-          "date": "18/62021"
-        },
-        {
-          "id_operation": 3,
-          "debt": 370,
-          "concept": "Frutas, Gaseosa Coca Cola y chocolates",
-          "date": "27/62021"
+          "id_operation": "117082021021115471",
+          "debt": 250,
+          "concept": "Chocolates",
+          "date": "17/08/2021"
         }
       ],
       "id": 1
     },
     {
-      "name": "Luciano",
-      "lastName": "Darín",
-      "nickName": "El chino",
-      "phoneNumber": "3815474747",
-      "currentDebt": 1254,
-      "address": "Bº PiedraBuena",
-      "history": [
-        {
-          "id_operation": 1,
-          "debt": 120,
-          "concept": "Frutas: bananas y naranjas",
-          "date": "20/5/2021"
-        },
-        {
-          "id_operation": 2,
-          "debt": 400,
-          "concept": "Frutas, leche y 1 bandeja de huevos",
-          "date": "21/5/2021"
-        },
-        {
-          "id_operation": 3,
-          "debt": 480,
-          "concept": "Pizzas, y gaseosas",
-          "date": "28/5/2021"
-        }
-      ],
+      "name": "Isabella",
+      "lastName": "Gutierrez",
+      "nickName": "Pocha",
+      "phoneNumber": "3816451523",
+      "currentDebt": 0,
+      "address": "Honduras 222",
+      "history": [],
       "id": 2
-    },
-    {
-      "name": "María",
-      "lastName": "Stoessel",
-      "nickName": "Chavela",
-      "phoneNumber": "29525747484",
-      "currentDebt": 2315,
-      "address": "Honduras 1254",
-      "history": [
-        {
-          "id_operation": 1,
-          "debt": 350,
-          "concept": "Pollo y hamburguesas",
-          "date": "21/6/201"
-        },
-        {
-          "id_operation": 2,
-          "debt": 820,
-          "concept": "Frutas, queso, pollo, leche y hamburguesas",
-          "date": "22/6/201"
-        },
-        {
-          "id_operation": 3,
-          "debt": 370,
-          "concept": "Hamburguesas veganas",
-          "date": "23/6/201"
-        }
-      ],
-      "id": 3
     }
   ]
 }
